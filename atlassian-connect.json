@@ -1,0 +1,18 @@
+{
+    "key": "my-app",
+    "name": "My App",
+    "description": "App description",
+    "baseUrl": "{{localBaseUrl}}",
+    "authentication": {
+        "type": "jwt"
+    },
+    "lifecycle": {
+        "installed": "/installed"
+    },
+    "scopes": [
+        "READ"
+    ],
+    "enableLicensing": true,
+    "modules": {
+    }
+}

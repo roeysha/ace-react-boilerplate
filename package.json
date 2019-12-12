@@ -1,0 +1,33 @@
+{
+  "name": "version-manager-cloud",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node -r esm app.js",
+    "lint": "eslint app.js routes",
+    "build": "./node_modules/.bin/sequelize-cli db:migrate --env production && cd react-ui/ && npm install && npm install --only=dev && npm run build",
+    "watch": "nodemon npm start"
+  },
+  "dependencies": {
+    "atlassian-connect-express": "^3.5.2",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.4",
+    "errorhandler": "^1.5.1",
+    "esm": "^3.2.22",
+    "express": "^4.16.4",
+    "express-hbs": "^2.3.0",
+    "express-validator": "^6.3.0",
+    "moment": "^2.24.0",
+    "morgan": "^1.9.1",
+    "pg": "^7.14.0",
+    "sequelize": "^5.21.2",
+    "sequelize-cli": "^5.5.1",
+    "sqlite3": "^4.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "ngrok": "^3.2.5",
+    "nodemon": "^2.0.2"
+  }
+}

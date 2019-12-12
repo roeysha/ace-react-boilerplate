@@ -1,0 +1,6 @@
+@import "~@atlaskit/css-reset/dist/bundle.css";
+
+.App {
+    margin: 0px 40px;
+    min-height: 500px;
+}
